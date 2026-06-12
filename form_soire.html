@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soirée infos</title>
+    <link rel="stylesheet" href="soir.css">
+</head>
+<body>
+    <main class="page">
+        <form class="card" action="https://formspree.io/f/xzdqkpgq" method="POST">
+            <header class="card-header">
+                <p class="eyebrow">Questionnaire soirée ^w^</p>
+                <h1 id="title_pr">Prépare la soirée</h1>
+                <p class="intro">Donne moi tes préférences pour que la soirée soit réussie.</p>
+            </header>
+
+            <fieldset>
+                <legend>Ton profil</legend>
+                <label class="field">
+                    <span>Prénom</span>
+                    <input type="text" name="prenom" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vas tu dormir sur place ?</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="dodo" value="yes"> Oui</label>
+                    <label><input type="radio" name="dodo" value="no"> Non</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Apport</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="duvet"> Duvet</label>
+                    <label><input type="checkbox" name="matela"> Matelas</label>
+                </div>
+                <label class="field">
+                    <span>Autre chose à ramener ?</span>
+                    <input type="text" name="autre_apport" placeholder="Ex: snacks, jeux, couvertures...">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aliments</legend>
+                <label class="field">
+                    <span>Quels sont les aliments que tu n'aimes pas ?</span>
+                    <input type="text" name="No_Aliment">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Préférences</legend>
+                <label class="field">
+                    <span>Préférence de plat pour la soirée ?</span>
+                    <input type="text" name="wanted_food">
+                </label>
+                <div class="radio-group">
+                    <span>Tu vas venir quand ?</span>
+                    <label><input type="radio" name="when" value="avant"> Avant la soirée</label>
+                    <label><input type="radio" name="when" value="start"> Au début de la soirée</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Idées d'activité</legend>
+                <div class="activity-group">
+                    <div>
+                        <h3>Film</h3>
+                        <label><input type="radio" name="idee_film" value="oui"> J'aime</label>
+                        <label><input type="radio" name="idee_film" value="non"> Je n'aime pas</label>
+                    </div>
+                    <div>
+                        <h3>Jeux de société</h3>
+                        <label><input type="radio" name="idee_jeux_societe" value="oui"> J'aime</label>
+                        <label><input type="radio" name="idee_jeux_societe" value="non"> Je n'aime pas</label>
+                    </div>
+                    <div>
+                        <h3>Jeux vidéo</h3>
+                        <label><input type="radio" name="idee_jeux_video" value="oui"> J'aime</label>
+                        <label><input type="radio" name="idee_jeux_video" value="non"> Je n'aime pas</label>
+                    </div>
+                    <div>
+                        <h3>Sorties la nuit</h3>
+                        <label><input type="radio" name="idee_sorties_nuit" value="oui"> J'aime</label>
+                        <label><input type="radio" name="idee_sorties_nuit" value="non"> Je n'aime pas</label>
+                    </div>
+                </div>
+                <label class="field">
+                    <span>Autres idées que tu aimerais proposer</span>
+                    <input type="text" name="idee_personnelle" placeholder="Ta propre idée">
+                </label>
+            </fieldset>
+
+            <button id="button" type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>

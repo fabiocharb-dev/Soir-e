@@ -19,23 +19,23 @@
                 <legend>Ton profil</legend>
                 <label class="field">
                     <span>Prénom</span>
-                    <input type="text" name="prenom" required>
+                    <input type="text" name="prenom_utilisateur" required>
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend>Vas tu dormir sur place ?</legend>
                 <div class="radio-group">
-                    <label><input type="radio" name="dodo" value="yes"> Oui</label>
-                    <label><input type="radio" name="dodo" value="no"> Non</label>
+                    <label><input type="radio" name="dort_sur_place" value="yes"> Oui</label>
+                    <label><input type="radio" name="dort_sur_place" value="no"> Non</label>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Apport</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="duvet"> Duvet</label>
-                    <label><input type="checkbox" name="matela"> Matelas</label>
+                    <label><input type="checkbox" name="apporte_duvet"> Duvet</label>
+                    <label><input type="checkbox" name="apporte_matelas"> Matelas</label>
                 </div>
                 <label class="field">
                     <span>Autre chose à ramener ?</span>
@@ -47,7 +47,7 @@
                 <legend>Aliments</legend>
                 <label class="field">
                     <span>Quels sont les aliments que tu n'aimes pas ?</span>
-                    <input type="text" name="No_Aliment">
+                    <input type="text" name="aliments_non_aimes">
                 </label>
             </fieldset>
 
@@ -55,12 +55,12 @@
                 <legend>Préférences</legend>
                 <label class="field">
                     <span>Préférence de plat pour la soirée ?</span>
-                    <input type="text" name="wanted_food">
+                    <input type="text" name="preference_plat">
                 </label>
                 <div class="radio-group">
                     <span>Tu vas venir quand ?</span>
-                    <label><input type="radio" name="when" value="avant"> Avant la soirée</label>
-                    <label><input type="radio" name="when" value="start"> Au début de la soirée</label>
+                    <label><input type="radio" name="moment_arrivee" value="avant"> Avant la soirée</label>
+                    <label><input type="radio" name="moment_arrivee" value="start"> Au début de la soirée</label>
                 </div>
             </fieldset>
 
@@ -69,28 +69,28 @@
                 <div class="activity-group">
                     <div>
                         <h3>Film</h3>
-                        <label><input type="radio" name="idee_film" value="oui"> J'aime</label>
-                        <label><input type="radio" name="idee_film" value="non"> Je n'aime pas</label>
+                        <label><input type="radio" name="activite_film" value="oui"> J'aime</label>
+                        <label><input type="radio" name="activite_film" value="non"> Je n'aime pas</label>
                     </div>
                     <div>
                         <h3>Jeux de société</h3>
-                        <label><input type="radio" name="idee_jeux_societe" value="oui"> J'aime</label>
-                        <label><input type="radio" name="idee_jeux_societe" value="non"> Je n'aime pas</label>
+                        <label><input type="radio" name="activite_jeux_societe" value="oui"> J'aime</label>
+                        <label><input type="radio" name="activite_jeux_societe" value="non"> Je n'aime pas</label>
                     </div>
                     <div>
                         <h3>Jeux vidéo</h3>
-                        <label><input type="radio" name="idee_jeux_video" value="oui"> J'aime</label>
-                        <label><input type="radio" name="idee_jeux_video" value="non"> Je n'aime pas</label>
+                        <label><input type="radio" name="activite_jeux_video" value="oui"> J'aime</label>
+                        <label><input type="radio" name="activite_jeux_video" value="non"> Je n'aime pas</label>
                     </div>
                     <div>
                         <h3>Sorties la nuit</h3>
-                        <label><input type="radio" name="idee_sorties_nuit" value="oui"> J'aime</label>
-                        <label><input type="radio" name="idee_sorties_nuit" value="non"> Je n'aime pas</label>
+                        <label><input type="radio" name="activite_sorties_nuit" value="oui"> J'aime</label>
+                        <label><input type="radio" name="activite_sorties_nuit" value="non"> Je n'aime pas</label>
                     </div>
                 </div>
                 <label class="field">
                     <span>Autres idées que tu aimerais proposer</span>
-                    <input type="text" name="idee_personnelle" placeholder="Ta propre idée">
+                    <input type="text" name="idee_personnelle_souhaitee" placeholder="Ta propre idée">
                 </label>
             </fieldset>
 
